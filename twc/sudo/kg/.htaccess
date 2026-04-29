@@ -1,7 +1,5 @@
 # twc/sudo/kg repository
 #
-# https://w3id.org/twc/sudo/kg/... redirects to
-# https://spark-6d47.tailb1f37b.ts.net/sudo-uri-resolver/doc/...
 #
 # ## Contact
 # This space is administered by:
@@ -9,5 +7,10 @@
 # Henrique Santos
 # GitHub username: hansidm
 
-RewriteEngine on
-RewriteRule ^(.*)$ https://spark-6d47.tailb1f37b.ts.net/sudo-uri-resolver/doc/$1 [R=303,L]
+RewriteEngine On
+
+# /twc/sudo/kg → resolver root
+RewriteRule ^$ https://spark-6d47.tailb1f37b.ts.net/sudo-uri-resolver/ [R=303,L]
+
+# /twc/sudo/kg/... → resolver/... preserving suffix
+RewriteRule ^(.+)$ https://spark-6d47.tailb1f37b.ts.net/sudo-uri-resolver/$1 [R=303,L]
