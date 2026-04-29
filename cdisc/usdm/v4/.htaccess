@@ -1,0 +1,18 @@
+# /cdisc/usdm/v4/
+#
+# https://w3id.org/cdisc/usdm/v4 redirects to a Turtle (RDF/OWL) rendering
+# of CDISC USDM v4, generated mechanically from the CDISC DDF-RA YAML
+# source. Hash semantics: every minted IRI (e.g. .../v4#Activity) is a
+# fragment of the same Turtle document.
+#
+# Status: draft, not a normative CDISC artifact. Offered for transfer to
+# CDISC governance; transfer is a single PR against this .htaccess to
+# change the redirect target. See README.md.
+#
+# ## Contact
+# Kerstin Forsberg
+# kerstin.l.forsberg@gmail.com
+# GitHub username: kerfors
+
+RewriteEngine on
+RewriteRule ^$ https://raw.githubusercontent.com/kerfors/usdm-rdf/refs/tags/v0.2.0/usdm_v4.ttl [R=303,L]
