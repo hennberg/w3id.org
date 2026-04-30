@@ -1,6 +1,6 @@
 # https://w3id.org/hpcc/ redirects via HTTP 303 using content negotiation:
 # - HTML requests are redirected to:
-#   https://paitools.github.io/HPCCOntology/documentation/index-en.html
+#   https://paitools.github.io/HPCCOntology/docs/index-en.html
 # - RDF/OWL requests are redirected to:
 #   https://paitools.github.io/HPCCOntology/HPCC.owl
 
@@ -16,7 +16,7 @@ RewriteEngine On
 # --- Human-facing documentation (HTML) ---
 RewriteCond %{HTTP_ACCEPT} text/html [OR]
 RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml
-RewriteRule ^$ https://paitools.github.io/HPCCOntology/documentation/index-en.html [R=303,L]
+RewriteRule ^$ https://paitools.github.io/HPCCOntology/docs/index-en.html [R=303,L]
 
 # --- Machine-facing ontology (RDF/OWL) ---
 RewriteCond %{HTTP_ACCEPT} application/rdf\+xml [OR]
