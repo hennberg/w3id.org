@@ -64,7 +64,8 @@ the Accept-based content-negotiation contract above.
 ## Contact
 
 * **Maintainer:** Daniel Hernandez
-* **Email:** <daniel@degu.cl>
+* **Email (primary):** <daniel@degu.cl>
+* **Email (institutional):** <daniel.hernandez@ki.uni-stuttgart.de>
 * **GitHub:** [@danielhz](https://github.com/danielhz)
 * **Affiliation:** Institute for Artificial Intelligence (KI),
   University of Stuttgart, Germany
